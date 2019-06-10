@@ -1,4 +1,46 @@
 import React from 'react';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
+
+
+const Login = () => (
+  <Modal.Dialog>
+  <Modal.Header>
+    <Modal.Title>Log In</Modal.Title>
+  </Modal.Header>
+  <Modal.Body>
+    <Form.Group controlId="Email"  class="form-inline">
+      <Form.Label>Email address</Form.Label>
+      <Form.Control type="email" placeholder="Enter email" />
+      <Form.Text className="text-muted">
+        We'll never share your email with anyone else.
+      </Form.Text>
+    </Form.Group>
+
+    <Form.Group controlId="Password" class="form-inline">
+      <Form.Label>Password</Form.Label>
+      <Form.Control type="password" placeholder="Password" />
+    </Form.Group>
+    <Form.Group controlId="formBasicChecbox">
+      <Form.Check type="checkbox" label="Remember Me" />
+    </Form.Group>
+  </Modal.Body>
+  <Modal.Footer>
+    <Button variant="info" type="continuar">
+      Continuar
+    </Button>
+  </Modal.Footer>
+</Modal.Dialog>
+);
+
+export default Login;
+/*
+  <> 
+    Username : <input type="text" />
+    Password : <input type="password" />
+  </>
+);*/
 
 /*
 function Login(props) {
@@ -29,7 +71,7 @@ const Login =(props) => {
 */
 
 
-
+/*
 class Login extends React.Component {
     constructor(props) { //props las propiedades que recibe tu componente prop es externo, datos de afuera
         super(props);
@@ -59,4 +101,4 @@ class Login extends React.Component {
 
 
 
-export default Login;
+export default Login;*/
