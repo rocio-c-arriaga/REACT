@@ -1,4 +1,5 @@
 import React from 'react';
+
 class Registro extends React.Component {
     constructor(props) { //props las propiedades que recibe tu componente prop es externo, datos de afuera
         super(props);
@@ -49,10 +50,12 @@ class Registro extends React.Component {
 
     render() { // es lo que se va a imprimir en pantalla, todo lo de html
         return (
-            <div>
+            <div className="aside1">Imagen
+                    
+            <div className="aside2">
                 <div>Nombre 
                     <input value={this.state.nombre} 
-                    onChange={(event) => this.actualizaNombre(event)} /></div>
+                    onChange={(event) => this.actualizaNombre(event)} /> </div>
                 <div>Apellido 
                     <input value={this.state.apellido} 
                     onChange={(event) => this.actualizaApellido(event)} /> </div>
@@ -66,6 +69,7 @@ class Registro extends React.Component {
                     <button disabled = {this.verificarDatos()}
                     type="submit" onClick={(event) => this.botonClicked(event)} > click me </button> </div>
             </div>
+        </div>
         )
     }
 }

@@ -1,0 +1,5 @@
+.aside2 {
+    display: flex;
+    justify-content: space-around;
+    background-color: black
+}

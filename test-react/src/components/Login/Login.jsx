@@ -50,7 +50,7 @@ class Login extends Component {
   render() {
     let alert = null;
     if (this.state.loggedIn) {
-      return (<Redirect to="/list" />);
+      return (<Redirect to="/Menu" />);
     }
     if (this.state.loginError) {
       alert = (<Alert variant="danger">Check password or username!</Alert>);
@@ -82,7 +82,7 @@ class Login extends Component {
           </Form.Group>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="primary" type="button" onClick={this.logIn}>Log In</Button>
+          <Button variant="success" type="button" onClick={this.logIn}>Log In</Button>
         </Modal.Footer>
         {alert}
       </Modal.Dialog>

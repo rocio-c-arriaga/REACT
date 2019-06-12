@@ -7,6 +7,7 @@ import Route from 'react-router-dom/Route';
 import Login from'./Login/Login';
 import Header from './Header/Header';
 import List from './List/List';
+import Menu from './Menu/Menu';
 
 //CSS
 import './App.css';
@@ -22,9 +23,11 @@ function App() {
 // BrowserRputer is a High Order Component
   return (
     <BrowserRouter>
-      <Route component={Header} />
+      <Route path="/" component= {Header} />
       <Route exact path="/" component={Login} />
       <Route path="/list" component={List} />
+      <Route path="/Registro" component= {Registro} />
+      <Route path="/Menu" component= {Menu} />
     </BrowserRouter> 
   );
 }

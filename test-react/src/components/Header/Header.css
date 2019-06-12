@@ -1,14 +1,14 @@
-.header {
-    display:flex;
-}
-
-.btn.btn-info {
-    width: 100px
-}
-
 .Header {
-    background-color: rgb(59, 187, 204);
+    background:linear-gradient(to right,#84eece, #23cdd3);
     text-align: left;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
+    text-align: right;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-left {
+    font-family: Verdana;
+    font-style: normal;
+    color: white;
 }
