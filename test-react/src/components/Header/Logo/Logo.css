@@ -1,0 +1,7 @@
+.Image {
+    width: 5px;
+    height: 5px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25%
+}

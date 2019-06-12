@@ -1,16 +1,16 @@
 import React from 'react';
+//npm i -s react-router-dom
+import BrowserRouter from 'react-router-dom/BrowserRouter';
+import Route from 'react-router-dom/Route';
 
 //Components
 import Login from'./Login/Login';
 import Header from './Header/Header';
 import List from './List/List';
 
-
-
 //CSS
 import './App.css';
-import Registro from './Registro.jsx/Registro';
-
+import Registro from './Registro/Registro';
 
 function App() {
   const items =[
@@ -19,15 +19,23 @@ function App() {
       {id: '3', name: 'Name 3', description: 'Description 3', value: 0},
       {id: '4', name: 'Name 4', description: 'Description 4', value: 5},
     ];
-
+// BrowserRputer is a High Order Component
   return (
-    <div className="App">
+    <BrowserRouter>
+      <Route component={Header} />
+      <Route exact path="/" component={Login} />
+      <Route path="/list" component={List} />
+    </BrowserRouter> 
+  );
+}
+
+export default App;
+
+/*
+return (
+   <div className="App">
       <Header />
       <Login />
       <List items={items}/>
     </div>
-  );
-}
-
-
-export default App;
+)*/

@@ -3,6 +3,12 @@
 }
 
 .btn.btn-info {
-    width: 2000px
+    width: 100px
 }
 
+.Header {
+    background-color: rgb(59, 187, 204);
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
