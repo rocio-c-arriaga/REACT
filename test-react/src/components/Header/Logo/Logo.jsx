@@ -1,16 +1,16 @@
 import React from 'react';
-import Logoimage from './logoB.png'
+import Logoimage from './BiciHeadblanco.svg'
 import Link from 'react-router-dom/Link';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 
 const Logo = () => (
     <Link to="/">
-        <Col xs={6} md={4}>
+        <Col xs={3} md={2}>
             <Image src={Logoimage} roundedCircle 
             alt=""
-            width="100"
-            height="100"
+            width="50"
+            height="50"
             className="d-inline-block align-top"
             />
         </Col>
