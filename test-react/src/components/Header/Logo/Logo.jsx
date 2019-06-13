@@ -7,7 +7,7 @@ import Image from 'react-bootstrap/Image';
 const Logo = () => (
     <Link to="/">
         <Col xs={3} md={2}>
-            <Image src={Logoimage} roundedCircle 
+            <Image src={Logoimage} 
             alt=""
             width="50"
             height="50"

@@ -1,0 +1,12 @@
+.modulo {
+    float: right;
+    width: 50%;
+    height: 500px;
+}
+
+.slides {
+    float: left;
+    max-width: 50%;
+    height: 500px;
+    
+}

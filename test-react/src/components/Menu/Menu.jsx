@@ -1,33 +1,20 @@
 import React from 'react';
+import Link from 'react-router-dom/Link';
+import Col from 'react-bootstrap/Col';
+import Image from 'react-bootstrap/Image';
+import BloquesIMG from './imgs/BiciEvent.svg'
 
-const Menu = () => (
-   <h1>Menu Principal</h1>
-)
-/*
-render() {
-   return (
-       <>
-           <CreateItem show={this.state.creating} hide={this.closeModal} />
-           <Button variant="primary" onClick={this.createItem}>Add newItem</Button>
-           <table className="list" className="table table-hover">
-               <thead>
-                   <tr>
-                       <th>Id</th>
-                       <th>Name</th>
-                       <th>Description</th>
-                       <th>Value</th>
-                       <th></th>
-                   </tr>
-               </thead>
-               <tbody>
-                   {this.renderItems()}
-               </tbody>
-           </table>
-       </>
+/*const Locales = () => (
+    <Link to="/Menu">
+        <Col xs={3} md={2}>
+            <Image src={BloquesIMG} roundedCircle 
+            alt=""
+            width="100"
+            height="100"
+            className="d-inline-block align-top"
+            />
+        </Col>
+    </Link>
+);*/
 
-   );
- }
-*/
-
-
-export default Menu;
+//export default Menu;

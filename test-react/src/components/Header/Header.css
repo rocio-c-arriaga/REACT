@@ -1,14 +1,14 @@
 .Header {
-    background:linear-gradient(to right,#84eece, #23cdd3);
+    background:linear-gradient(to right, #3ad2d8,#7ee9c9);
     text-align: left;
     text-align: right;
     display:flex;
-    justify-content: space-between;
+    justify-content:flex-start;
     align-items: center;
 }
 
 .text-left {
     font-family: Verdana;
-    font-style: normal;
     color: white;
+
 }

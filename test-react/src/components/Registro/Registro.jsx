@@ -1,8 +1,5 @@
 import React from 'react';
 
-import Carousel from 'react-bootstrap/Carousel';
-
-import Slide from './Bslide5';
 
 class Registro extends React.Component {
     constructor(props) { //props las propiedades que recibe tu componente prop es externo, datos de afuera
@@ -53,63 +50,26 @@ class Registro extends React.Component {
 
 
     render() { // es lo que se va a imprimir en pantalla, todo lo de html
-        return (         
-            <Carousel>
-                <Carousel.Item>
-                    <Image 
-                        img={Slide}
-                        className="d-block w-100"
-                        src="holder.js/800x400?text=First slide&bg=373940"
-                        alt="First slide"
-                    />
-                    <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src="holder.js/800x400?text=Second slide&bg=282c34"
-                        alt="Third slide"
-                    />
+        return (
 
-                    <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src="holder.js/800x400?text=Third slide&bg=20232a"
-                        alt="Third slide"
-                    />
-
-                    <Carousel.Caption>
-                        <h3>Third slide label</h3>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-            </Carousel>
-
-            <div className="aside2">
+            <div>
                 <div>Nombre
-                    <input value={this.state.nombre}
+                        <input value={this.state.nombre}
                         onChange={(event) => this.actualizaNombre(event)} /> </div>
                 <div>Apellido
-                    <input value={this.state.apellido}
+                        <input value={this.state.apellido}
                         onChange={(event) => this.actualizaApellido(event)} /> </div>
                 <div>Email
-                    <input value={this.state.email}
+                        <input value={this.state.email}
                         onChange={(event) => this.actualizaEmail(event)} /> </div>
                 <div>Mensaje
-                    <textarea value={this.state.mensaje}
+                        <textarea value={this.state.mensaje}
                         onChange={(event) => this.agregaMensaje(event)} /> </div>
                 <div>
                     <button disabled={this.verificarDatos()}
                         type="submit" onClick={(event) => this.botonClicked(event)} > click me </button> </div>
             </div>
+
         )
     }
 }

@@ -7,7 +7,8 @@ import Route from 'react-router-dom/Route';
 import Login from'./Login/Login';
 import Header from './Header/Header';
 import List from './List/List';
-import Menu from './Menu/Menu';
+//import Menu from './Menu/Menu';
+//import Locales from './Menu/Bloques/Locales;
 
 //CSS
 import './App.css';
@@ -27,7 +28,7 @@ function App() {
       <Route exact path="/" component={Login} />
       <Route path="/list" component={List} />
       <Route path="/Registro" component= {Registro} />
-      <Route path="/Menu" component= {Menu} />
+      
     </BrowserRouter> 
   );
 }
